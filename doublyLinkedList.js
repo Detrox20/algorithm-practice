@@ -148,7 +148,7 @@ list.prepend(30);
 // list.access(1);
 // list.insert(1, 1);
 // list.print();
-list.remove(6);
+list.remove(4);
 list.print();
 console.log(list);
 // list.prepend(30);
