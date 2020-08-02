@@ -87,7 +87,6 @@ class DoublyLinkedList {
       }
     }
 
-    let nextHead = currentHead.next;
     let insertHead = new Node(value, currentHead, currentHead.next);
     currentHead.next = insertHead;
   }
@@ -141,11 +140,12 @@ list.prepend(10);
 // console.log(list);
 list.prepend(20);
 list.prepend(30);
+list.append(4);
 // list.prepend(40);
 // list.access(1);
-// list.insert(1, 1);
+list.insert(4, 1);
 // list.print();
-list.remove(4);
+// list.remove(4);
 list.print();
 console.log(list);
 // list.prepend(30);
