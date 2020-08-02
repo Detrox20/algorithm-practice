@@ -22,9 +22,7 @@ class DoublyLinkedList {
     }
 
     this.head = new Node(value, null, this.head);
-    // console.log(this.head);
     this.head.next.prev = this.head;
-    // console.log(this.head);
   }
 
   append(value) {
@@ -39,7 +37,6 @@ class DoublyLinkedList {
     while (currentHead !== null) {
       previousHead = currentHead;
       currentHead = currentHead.next;
-      // console.log(currentHead);
     }
 
     previousHead.next = new Node(value, previousHead, null);
